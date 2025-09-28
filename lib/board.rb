@@ -1,11 +1,12 @@
 class Board
   attr_reader :grid
-  def initialize
-    @grid = [
+  def initialize(grid = [
              [0, 0, 0],
              [0, 0, 0],
              [0, 0, 0]
             ]
+)
+    @grid = grid
   end
 
   def display_board
@@ -26,14 +27,9 @@ class Board
   end
 
   def place_sign(row, column, sign)
-      if @grid[row][column] == 0
-        @grid[row][column] = sign
-      else
+    if @grid[row][column] == 0
+      @grid[row][column] = sign
     end
   end
-
-
-
-
 end
 
