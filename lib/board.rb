@@ -27,9 +27,7 @@ class Board
   end
 
   def place_sign(row, column, sign)
-    if @grid[row][column] == 0
-      @grid[row][column] = sign
-    end
+    @grid[row][column] = sign
   end
 end
 

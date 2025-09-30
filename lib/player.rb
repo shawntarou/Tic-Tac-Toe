@@ -49,9 +49,5 @@ class Player
     puts "#{@name}'s Turn!"
     board.display_board
     make_move(board)
-    
-
-
-    # we also want to check whether there is a winner or tie
   end
 end
