@@ -6,7 +6,7 @@ class Player
     @name = name
     @@number_of_players += 1
     @sign = @@number_of_players
-    puts "Player ##{@@number_of_players}: #{@name}!"
+    Kernel.puts "Player ##{@@number_of_players}: #{@name}!"
   end
 
   def get_space

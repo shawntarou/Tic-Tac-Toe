@@ -30,3 +30,20 @@ def check_win(current_player, board)
   end
   return false
 end
+
+def check_tie(board)
+  board.grid.each do |row|
+    row.each do |column|
+      if column == 0
+        return false
+      end
+    end
+  end
+  return true
+end
+
+def get_win_message(current_player, player_one, player_two)
+  winning_player = ''
+  current_player == 1 ? winning_player = player_one : winning_player = player_two
+  return "The Winner is #{winning_player.name}!"
+end
