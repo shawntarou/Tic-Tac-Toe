@@ -113,14 +113,14 @@ describe '#get_win_message' do
   end
 
   context 'when current player is player one' do
-    it 'returns "The Winner is Player One"' do
+    it 'returns "The Winner is Player 1!"' do
       win_message = get_win_message(1, player_one, player_two)
       expect(win_message).to eq"The Winner is Player 1!"
     end
   end
 
   context 'when current player is player two' do
-    it 'returns "The Winner is Player Two"' do
+    it 'returns "The Winner is Player 2!"' do
       win_message = get_win_message(2, player_one, player_two)
       expect(win_message).to eq"The Winner is Player 2!"
     end
